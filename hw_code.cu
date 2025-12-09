@@ -193,7 +193,7 @@ __global__ void student_bcast(int root_tid, float *input_sequential, float *outp
     /*
       STUDENT_TODO
     */
-    output_sequential[tid] = 0; //FIXME! 
+    output_sequential[tid] = shared_memory[tid]; //FIXME! 
     /*
       END_STUDENT_TODO
     */
